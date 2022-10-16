@@ -1,0 +1,27 @@
+Source: odr-padenc
+Section: hamradio
+Priority: optional
+Maintainer: Robin Alexander <robin.alexander@netplus.ch>
+Build-Depends: debhelper-compat (= 12), libmagickwand-6.q16-dev
+Standards-Version: 4.6.0.1
+Homepage: https://www.opendigitalradio.org/mmbtools
+Vcs-Browser: https://github.com/opendigitalradio/debian-padenc
+Vcs-Git: https://github.com/opendigitalradio/debian-padenc.git
+
+Package: odr-padenc
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This is an encoder for Programme Associated Data
+ ODR-PadEnc is an encoder for Programme Associated Data (PAD)
+ and includes support for:
+ .
+  - MOT Slideshow (including catSLS), according to
+ ETSI EN 301 234 and TS 101 499
+ .
+  - DLS (including DL Plus), according to
+ ETSI EN 300 401 and TS 102 980
+ .
+ To encode DLS and Slideshow data, the odr-padenc tool reads
+ images from a folder and DLS text from a file, and generates
+ the PAD data for the encoder.
